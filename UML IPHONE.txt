@@ -1,0 +1,53 @@
+
+Neste diagrama UML:
+
+iPhone é a classe principal que representa o dispositivo.
+Ele possui atributos como modelo, cor e capacidade.
+Métodos como ligar, desligar, atenderChamada, iniciarCorreioVoz, reproduzirMusica, navegarInternet, exibirPagina, adicionaNovaAba e atualizarPagina são definidos conforme as funcionalidades descritas.
+Há três interfaces (Reproduzivel, Telefone e Navegavel) que definem conjuntos de métodos relacionados às suas respectivas funcionalidades.
+Este diagrama UML representa a estrutura básica do iPhone com suas funcionalidades principais, utilizando classes, métodos, variáveis e interfaces para organizar e descrever as características do dispositivo conforme especificado.
+
+---------------------------------
+|          iPhone               |
+---------------------------------
+| - modelo: String              |
+| - cor: String                 |
+| - capacidade: int             |
+---------------------------------
+| + ligar(): void               |
+| + desligar(): void            |
+| + atenderChamada(): void      |
+| + iniciarCorreioVoz(): void   |
+| + reproduzirMusica(): void    |
+| + tocar(): void               |
+| + pausar(): void              |
+| + selecionarMusica(musica: String): void |
+| + navegarInternet(): void     |
+| + exibirPagina(url: String): void |
+| + adicionaNovaAba(): void     |
+| + atualizarPagina(): void     |
+---------------------------------
+
+Interfaces:
+-----------
+Reproduzivel
+-----------
++ tocar(): void
++ pausar(): void
++ selecionarMusica(musica: String): void
+
+-----------
+Telefone
+-----------
++ ligar(): void
++ desligar(): void
++ atenderChamada(): void
++ iniciarCorreioVoz(): void
+
+-----------
+Navegavel
+-----------
++ navegarInternet(): void
++ exibirPagina(url: String): void
++ adicionaNovaAba(): void
++ atualizarPagina(): void
